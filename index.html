@@ -19,7 +19,7 @@ body{background:var(--cream);color:var(--ink);font-family:var(--body);overflow-x
 button,input{font:inherit}
 button{cursor:pointer}
 button:focus-visible,input:focus-visible,.rail:focus-visible{outline:2px solid #1b1a17;outline-offset:4px}
-main{position:relative;isolation:isolate;min-height:100vh;min-height:100svh;padding:28px 0 27px;overflow:hidden;background:radial-gradient(ellipse 46% 42% at 59% 78%,rgba(255,251,236,.58),transparent 87%), radial-gradient(ellipse 38% 36% at 10% 71%,rgba(208,179,140,.20),transparent 84%), radial-gradient(ellipse 55% 42% at 51% 16%,rgba(255,255,242,.47),transparent 85%),var(--cream)}
+main{position:relative;isolation:isolate;min-height:100vh;min-height:100svh;padding:20px 0 27px;overflow:hidden;background:radial-gradient(ellipse 46% 42% at 59% 78%,rgba(255,251,236,.58),transparent 87%), radial-gradient(ellipse 38% 36% at 10% 71%,rgba(208,179,140,.20),transparent 84%), radial-gradient(ellipse 55% 42% at 51% 16%,rgba(255,255,242,.47),transparent 85%),var(--cream)}
 main::before{content:"";position:absolute;top:-8%;right:-5%;width:min(36vw,580px);height:min(40vw,600px);pointer-events:none;opacity:.19;filter:blur(11px);background:
 linear-gradient(119deg,transparent 52%,rgba(98,85,54,.23) 52.5%,transparent 53.2%),
 radial-gradient(ellipse 10% 31% at 66% 17%,rgba(112,100,71,.42) 0 50%,transparent 56%),
@@ -27,10 +27,10 @@ radial-gradient(ellipse 12% 30% at 82% 30%,rgba(112,100,71,.38) 0 52%,transparen
 radial-gradient(ellipse 10% 28% at 55% 45%,rgba(112,100,71,.42) 0 52%,transparent 59%),
 radial-gradient(ellipse 12% 28% at 84% 65%,rgba(112,100,71,.32) 0 52%,transparent 59%);transform:rotate(-18deg);z-index:-1}
 .top{display:flex;align-items:center;flex-direction:column;text-align:center;padding:0 22px;position:relative;z-index:2}
-.brand{width:clamp(80px,15vw,285px);height:auto;display:block}
-h1{font-family:var(--display);font-weight:400;letter-spacing:-.065em;line-height:1.1;font-size:clamp(20px,6.55vw,128px);margin:24px 0 3px;text-wrap:balance}
+.brand{width:clamp(205px,18vw,285px);height:auto;display:block}
+h1{font-family:var(--display);font-weight:400;letter-spacing:-.065em;line-height:1.1;font-size:clamp(58px,6.55vw,116px);margin:14px 0 3px;text-wrap:balance}
 .lead{font-size:clamp(14px,1.5vw,20px);font-weight:400;font-style:italic;line-height:1.6;letter-spacing:.003em;margin:0;max-width:640px}
-.signup{display:flex;align-items:center;width:min(605px,calc(100% - 42px));height:58px;margin-top:29px;border:1px solid #9d9c91;border-radius:100px;background:rgba(255,255,247,.23);overflow:hidden;text-align:left}
+.signup{display:flex;align-items:center;width:min(605px,calc(100% - 42px));height:58px;margin-top:20px;border:1px solid #9d9c91;border-radius:100px;background:rgba(255,255,247,.23);overflow:hidden;text-align:left}
 .signup input{min-width:0;flex:1;border:none;outline:none;background:none;height:100%;padding:0 32px;font-size:17px;color:var(--ink);font-weight:400}
 .signup input::placeholder{color:#8c8c85;opacity:1}
 .signup button{color:#fff;background:#0b0a09;border:0;height:100%;padding:0 38px;border-radius:100px;font-size:16px;white-space:nowrap;transition:background .2s}
@@ -55,13 +55,14 @@ h1{font-family:var(--display);font-weight:400;letter-spacing:-.065em;line-height
 .progress .dot{border:0;min-width:9px;width:9px;height:9px;padding:0;border-radius:50%;background:#c7c1ad;transition:background .25s,transform .25s}
 .progress .dot[aria-current="true"]{background:#191817;transform:scale(1.04)}
 .bottom{font-size:12px;text-align:center;opacity:.55;margin-top:12px}
-@media(min-width:1500px){main{padding-top:36px}.collection{margin-top:32px}.rail{min-height:595px}}
+@media(min-width:1500px){main{padding-top:24px}.collection{margin-top:16px}.rail{min-height:595px}}
 @media(max-width:720px){
- main{padding:24px 0 20px;min-height:100svh}
+ main{padding:18px 0 20px;min-height:100svh}
  main::before{top:-1%;right:-20%;width:85vw;height:75vw;opacity:.12;filter:blur(9px)}
- h1{letter-spacing:-.064em;white-space:nowrap;margin:17px 0 8px;line-height:1.07}
+ .brand{width:clamp(180px,51vw,216px)}
+ h1{font-size:clamp(38px,11.6vw,54px);letter-spacing:-.064em;white-space:nowrap;margin:12px 0 8px;line-height:1.07}
  .lead{font-size:clamp(12px,3.4vw,16px);line-height:1.5;max-width:340px;white-space:normal}
- .signup{width:calc(100vw - 46px);max-width:490px;height:56px;margin-top:18px}
+ .signup{width:calc(100vw - 46px);max-width:490px;height:56px;margin-top:14px}
  .signup input{font-size:14px;padding:0 18px}
  .signup button{font-size:14px;padding:0 24px}
  .collection{margin-top:34px}
@@ -76,24 +77,24 @@ h1{font-family:var(--display);font-weight:400;letter-spacing:-.065em;line-height
  .progress{display:flex;margin-top:3px;gap:13px}
  .bottom{margin-top:12px;font-size:11px}
 }
-@media(max-width:370px){main{padding-top:24px}h1{margin-top:14px}.lead{font-size:12px}.signup{margin-top:17px;height:54px}.signup button{padding:0 19px}.collection{margin-top:18px}.rail{min-height:375px}}
+@media(max-width:370px){main{padding-top:18px}h1{margin-top:10px}.lead{font-size:12px}.signup{margin-top:14px;height:54px}.signup button{padding:0 19px}.collection{margin-top:8px}.rail{min-height:375px}}
 @media(prefers-reduced-motion:reduce){html,.rail{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 
 /* Phone waitlist enhancements: preserve the approved layout */
 .signup{position:relative}
 .signup .honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
 .signup button:disabled{opacity:.55;cursor:wait}
-.consent{display:flex;gap:10px;align-items:flex-start;margin-top:15px;text-align:left;width:min(566px,calc(100% - 62px));font-size:12px;line-height:1.45;color:#655e51;cursor:pointer}
+.consent{display:flex;gap:10px;align-items:flex-start;margin-top:12px;text-align:left;width:min(566px,calc(100% - 62px));font-size:12px;line-height:1.45;color:#655e51;cursor:pointer}
 .consent input{margin:2px 0 0;flex:none;width:15px;height:15px;accent-color:#14120f;cursor:pointer}
 .signup-status{font-size:12px;line-height:1.35;min-height:14px;margin:7px 0 0;max-width:560px;color:#4d493f}
 .signup-status.error{color:#8c3426}
-@media(max-width:720px){.consent{width:calc(100vw - 58px);max-width:455px;font-size:11px;margin-top:13px;gap:8px}.signup-status{width:calc(100vw - 58px);font-size:11px}}
+@media(max-width:720px){.consent{width:calc(100vw - 58px);max-width:455px;font-size:11px;margin-top:11px;gap:8px}.signup-status{width:calc(100vw - 58px);font-size:11px}}
 
 .consent a{color:#11100e;text-underline-offset:3px;text-decoration-thickness:1px;}
 .consent a:focus-visible{outline:2px solid #11100e;outline-offset:3px}
 
 /* Version 3: rail, tagged garments and extremely subtle movement cue. */
-.collection{margin-top:30px;isolation:isolate}
+.collection{margin-top:12px;isolation:isolate}
 .clothing-rod{position:absolute;top:48px;left:-3px;right:-3px;height:10px;z-index:0;pointer-events:none;border-top:1px solid rgba(88,76,58,.48);border-bottom:1px solid rgba(84,73,55,.25);background:linear-gradient(to bottom,#5b5750 0%,#beb9ac 18%,#f9f8e8 39%,#8b887d 58%,#615c50 83%,#b4aa90 100%);box-shadow:0 2px 4px rgba(69,60,43,.11),0 -1px 2px rgba(255,255,255,.4)}
 .rail{position:relative;z-index:1;scrollbar-width:none;scroll-snap-type:none;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 4.5%,#000 95.5%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0%,#000 4.5%,#000 95.5%,transparent 100%)}
 .garment img{position:relative;z-index:1}
@@ -101,7 +102,7 @@ h1{font-family:var(--display);font-weight:400;letter-spacing:-.065em;line-height
 .soon-tag::before{content:'';position:absolute;height:34px;top:-34px;left:8px;border-left:1px solid #aa9980;transform-origin:bottom;transform:rotate(-20deg)}
 .soon-tag::after{content:'';position:absolute;top:4px;left:6px;width:4px;height:4px;background:#baaa90;border-radius:50%}
 @media(max-width:720px){
- .collection{margin-top:14px}
+ .collection{margin-top:6px}
  .clothing-rod{top:34px;height:8px}
  .rail{-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 7%,#000 93%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0%,#000 7%,#000 93%,transparent 100%)}
  .soon-tag{top:71px;left:calc(50% + 17px);padding:7px 8px 6px;min-width:45px;font-size:9px;letter-spacing:.14em;transform:rotate(8deg)}
