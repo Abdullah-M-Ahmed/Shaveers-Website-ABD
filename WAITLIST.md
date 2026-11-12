@@ -1,9 +1,10 @@
 # Shaveers launch waitlist
 
-Vercel routes the homepage to `public/launch.html` and temporarily redirects old
-product and checkout URLs to the homepage. The storefront source and build entry
-are still in the repository. To restore the storefront, remove the launch redirects
-and homepage rewrite from `vercel.json` or roll back to the storefront deployment.
+The Vite homepage is the launch page. Vercel temporarily redirects old product
+and checkout URLs to the homepage. The storefront source is still in the repository
+and its HTML entry is saved in `storefront.html`. To restore the storefront, put
+that entry back at `index.html` and remove the launch redirects from `vercel.json`,
+or roll back to the storefront deployment.
 
 The form sends the number and current explicit consent to `POST /api/waitlist`.
 The function saves one private JSON record per normalized phone number. Each record

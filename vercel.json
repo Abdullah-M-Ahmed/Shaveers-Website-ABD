@@ -1,10 +1,15 @@
 {
   "installCommand": "npm ci --no-audit --no-fund",
   "redirects": [
-    { "source": "/product/:path*", "destination": "/", "permanent": false },
-    { "source": "/checkout", "destination": "/", "permanent": false }
-  ],
-  "rewrites": [
-    { "source": "/", "destination": "/launch.html" }
+    {
+      "source": "/product/:path*",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/checkout",
+      "destination": "/",
+      "permanent": false
+    }
   ]
 }
